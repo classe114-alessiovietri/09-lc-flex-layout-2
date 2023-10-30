@@ -18,3 +18,51 @@ html {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* 
+    MAIN
+*/
+.main-layout-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+main {
+    margin: 20px 0;
+}
+
+.main-layout-container > * {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+main aside {
+    width: calc(25% - 20px);
+}
+
+main section {
+    width: calc(50% - 20px);
+}
+
+/* 
+    DEBUG
+*/
+.debug .header-main-container,
+.debug .footer-main-container {
+    background-color: #9A9AF5;
+    min-height: 100px;
+}
+
+.debug main aside {
+    background-color: blue;
+    min-height: 200px;
+    border: 3px dashed red;
+}
+
+.debug main section {
+    background-color: fuchsia;
+    min-height: 300px;
+    border: 3px dashed red;
+}
